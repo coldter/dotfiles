@@ -1,0 +1,29 @@
+.tmp/
+
+# jenv
+.java-version
+
+# PIDs
+.attach_pid*
+
+# IntelliJ
+.idea
+*.iml
+
+# javascript
+npm-debug.log
+yarn-error.log
+node_modules/
+
+*.pyc
+*.sw[nop]
+.DS_Store
+.bundle
+.env
+.git/
+/log
+db/*.sqlite3
+log/*.log
+rerun.txt
+tmp/**/*
+/tags

@@ -1,0 +1,38 @@
+[init]
+defaultBranch = main
+
+[core]
+attributes = ~/.gitattributes
+autocrlf = input
+
+[user]
+email = 'hi@kuldeep.tech'
+name = 'Kuldeep Parmar'
+
+[credential]
+helper = cache --timeout=3600
+
+[color]
+diff = auto
+status = auto
+branch = auto
+interactive = auto
+ui = true
+pager = true
+
+[push]
+default = current
+
+[alias]
+aa = add --all
+ap = add --patch
+ci = commit -v
+co = checkout
+pf = push --force-with-lease
+st = status
+
+[merge]
+ff = only
+
+[include]
+path = ~/.gitconfig.local
