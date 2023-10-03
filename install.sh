@@ -108,7 +108,7 @@ execute_script() {
 printf "\n"
 ask_custom_option "Select AUR helper" "paru or yay" aur_helper
 printf "\n"
-ask_yes_no "Do you have nvidia gpu?" nvidia
+ask_yes_no "Do you have nvidia gpu? You may still require manual setup of kernel params refer https://wiki.hyprland.org/Nvidia/ for more info." nvidia
 printf "\n"
 ask_yes_no "Do you want to install GTK themes?" gtk_themes
 printf "\n"
@@ -120,8 +120,8 @@ ask_yes_no "Do you want to install and configure SDDM?" sddm
 printf "\n"
 ask_yes_no "Do you want to install XDG-DESKTOP-PORTAL-HYPRLAND?" xdph
 printf "\n"
-# ask_yes_no "Do you want to link dotfiles?" dots
-# printf "\n"
+ask_yes_no "Do you want to copy dotfiles?" dots
+printf "\n"
 # Ensuring all in the scripts folder are made executable
 chmod +x $script_directory/*
 
@@ -136,7 +136,8 @@ else
 fi
 
 # Install hyprland packages
-execute_script "00-hypr-pkgs.sh"
+#  TODO: uncomment this when the script is ready
+# execute_script "00-hypr-pkgs.sh"
 
 #  TODO: uncomment this when the script is ready
 # if [ "$nvidia" == "Y" ]; then
@@ -166,3 +167,7 @@ execute_script "00-hypr-pkgs.sh"
 # if [ "$xdph" == "Y" ]; then
 #     execute_script "xdph.sh"
 # fi
+
+if [ "$dots" == "Y" ]; then
+    ./dots.sh
+fi
