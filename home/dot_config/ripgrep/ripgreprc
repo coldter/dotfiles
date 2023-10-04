@@ -1,0 +1,28 @@
+# ripgrep config
+
+--smart-case
+--line-number
+--follow
+--hidden
+
+--max-columns=150
+--max-columns-preview
+
+--color=always
+
+# glob
+
+--glob=!.git/
+--glob=!.idea/
+
+--glob=!poetry.lock
+--glob=!Pipfile.lock
+--glob=!go.sum
+--glob=!Cargo.lock
+--glob=!package-lock.json
+--glob=!yarn.lock
+
+--glob=!tmp/**/*
+--glob=!coverage/**/*
+--glob=!*.cache
+--glob=!node_modules/**/*

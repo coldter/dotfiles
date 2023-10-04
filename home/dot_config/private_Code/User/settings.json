@@ -1,16 +1,14 @@
 {
-    // TODO: ORGANIZE THIS FILE 
-    // not completed
     "workbench.productIconTheme": "fluent-icons",
-    "workbench.colorTheme": "Bearded Theme Black & Emerald",
+    "workbench.colorTheme": "Forest",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
         "*": true,
-        "plaintext": true,
-        "markdown": true,
+        "plaintext": false,
+        "markdown": false,
         "scminput": false
     },
-    "editor.fontFamily": "'FiraCode Nerd Font Mono','Droid Sans Mono', 'monospace', monospace",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono','FiraCode Nerd Font Mono','Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "[markdown]": {
@@ -18,11 +16,14 @@
     },
     "explorer.confirmDelete": false,
     "workbench.iconTheme": "material-icon-theme",
-    "glassit.alpha": 240,
     "[jsonc]": {
         "editor.quickSuggestions": {
             "strings": true
         },
         "editor.suggest.insertMode": "replace"
     },
+    "redhat.telemetry.enabled": false,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "none",
 }
