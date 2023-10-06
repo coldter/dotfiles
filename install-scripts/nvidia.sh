@@ -6,6 +6,7 @@ nvidia_pkg=(
   nvidia-utils
   libva
   libva-nvidia-driver-git
+  linux-headers
 )
 
 # Set some colors for output messages

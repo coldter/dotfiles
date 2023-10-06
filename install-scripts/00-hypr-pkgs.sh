@@ -8,65 +8,82 @@
 
 # add packages wanted here
 Extra=(
+  firefox
+  neofetch
+  visual-studio-code-bin
+  eza
+  pokemon-colorscripts-git
   micro
   neovim
-  neofetch
   htop
   zip
   unzip
 )
 
 hypr_package=(
-  cliphist
-  dunst
-  foot
-  grim
-  gvfs
-  gvfs-mtp
-  jq
-  network-manager-applet
-  pamixer
-  pavucontrol
   pipewire
-  pipewire-pulse
-  pipewire-audio
   pipewire-alsa
-  playerctl
-  polkit-kde-agent
-  python-requests
-  qt5ct
+  pipewire-audio
+  pipewire-jack
+  pipewire-pulse
+  gst-plugin-pipewire
+  wireplumber
+  networkmanager
+  network-manager-applet
+  brightnessctl
+  qt5-wayland
+  qt6-wayland
+  qt5-quickcontrols
+  qt5-quickcontrols2
+  qt5-graphicaleffects
+  dunst
+  rofi-lbonn-wayland-git
+  waybar
+  swww
+  swaylock-effects
+  # python-pyamdgpuinfo
+  jq
+  wlogout
+  grim
   slurp
   swappy
-  swayidle
-  swaylock-effects
-  swww
-  waybar
+  cliphist
+  polkit-kde-agent
+  pacman-contrib
+  imagemagick
+  qt5-imageformats
+  pavucontrol
+  pamixer
+  kvantum
+  qt5ct
+  kitty
+  # alacritty
   wget
-  wl-clipboard
-  wofi
+  gvfs
+  gvfs-mtp
   xdg-user-dirs
   xfce4-settings
+  # wofi
+  # wl-clipboard
+  # swayidle
 )
 
 # the following packages can be deleted. however, dotfiles may not work properly
 hypr_package_2=(
-  brightnessctl
   btop
   cava
   ffmpegthumbs
   gnome-system-monitor
   mousepad
-  mpv
   nvtop
   nwg-look-bin
-  swaybg
+  # swaybg
   viewnior
   vim
   wlsunset
   polkit-gnome
   xdg-utils
   ntfs-3g
-  alacritty
 )
 
 fonts=(

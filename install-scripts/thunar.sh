@@ -52,8 +52,6 @@ install_package() {
   fi
 }
 
-# Bluetooth
-
 printf "${NOTE} Installing Thunar Packages...\n"
 for THUNAR in "${thunar[@]}"; do
   install_package "$THUNAR" 2>&1 | tee -a "$LOG"
@@ -63,22 +61,5 @@ for THUNAR in "${thunar[@]}"; do
   }
 done
 
-# Check for existing config folders and backup
-for DIR1 in Thunar xfce4; do
-  DIRPATH=~/.config/$DIR1
-  if [ -d "$DIRPATH" ]; then
-    echo -e "${NOTE} Config for $DIR1 found, backing up."
-    mv $DIRPATH $DIRPATH-back-up 2>&1 | tee -a "$LOG"
-    echo -e "${NOTE} Backed up $DIR1 to $DIRPATH-back-up."
-  fi
-done
-cp -r config/xfce4 ~/.config/ && { echo "Copy xfce4 completed!"; } || {
-  echo "Error: Failed to copy xfce4 config files."
-  exit 1
-} 2>&1 | tee -a "$LOG"
-cp -r config/Thunar ~/.config/ && { echo "Copy Thunar completed!"; } || {
-  echo "Error: Failed to copy Thunar config files."
-  exit 1
-} 2>&1 | tee -a "$LOG"
-
+sleep 2
 clear

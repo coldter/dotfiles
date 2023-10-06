@@ -1,5 +1,6 @@
 {
     "workbench.productIconTheme": "fluent-icons",
+    "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Forest",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
@@ -23,7 +24,14 @@
         "editor.suggest.insertMode": "replace"
     },
     "redhat.telemetry.enabled": false,
+    "editor.minimap.side": "left",
     "editor.minimap.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "workbench.startupEditor": "none",
+    // "terminal.external.linuxExec": "kitty",
+    // "terminal.explorerKind": "both",
+    // "terminal.sourceControlRepositoriesKind": "both",
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
 }
