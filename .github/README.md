@@ -1,6 +1,5 @@
 # ~/
 
-## 🏗️
+## [WIP]
 
-[WIP]
-some day...
+![screenshot](./img/screenshot.png)

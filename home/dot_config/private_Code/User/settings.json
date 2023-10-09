@@ -1,7 +1,7 @@
 {
     "workbench.productIconTheme": "fluent-icons",
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Forest",
+    "workbench.colorTheme": "Decay-Green",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
         "*": true,
@@ -34,4 +34,6 @@
     "security.workspace.trust.untrustedFiles": "newWindow",
     "security.workspace.trust.startupPrompt": "never",
     "security.workspace.trust.enabled": false,
+    "window.titleBarStyle": "custom",
+    "window.dialogStyle": "custom",
 }
