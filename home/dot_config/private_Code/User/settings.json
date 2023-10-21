@@ -1,39 +1,235 @@
 {
-    "workbench.productIconTheme": "fluent-icons",
-    "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Decay-Green",
-    "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono','FiraCode Nerd Font Mono','Droid Sans Mono', 'monospace', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-    "explorer.confirmDelete": false,
-    "workbench.iconTheme": "material-icon-theme",
     "[jsonc]": {
         "editor.quickSuggestions": {
             "strings": true
         },
         "editor.suggest.insertMode": "replace"
     },
-    "redhat.telemetry.enabled": false,
-    "editor.minimap.side": "left",
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorSurroundingLines": 5,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono','FiraCode Nerd Font Mono','Droid Sans Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 17,
+    "editor.fontWeight": "300",
+    "editor.inlineSuggest.enabled": true,
+    "editor.lineNumbers": "relative",
+    "editor.linkedEditing": true,
     "editor.minimap.enabled": false,
+    "editor.minimap.side": "left",
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.suggestFontSize": 14,
+    "editor.wordWrap": "on",
+    "errorLens.fontStyleItalic": true,
+    "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "workbench.startupEditor": "none",
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.ignoreRecommendations": false,
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/Thumbs.db": true,
+        "**/dist": true,
+        "**/node_modules": true
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "markdown": false,
+        "plaintext": false,
+        "scminput": false
+    },
+    "glassit.alpha": 220,
+    "go.alternateTools": {
+        "go": "/home/cooldeep/.asdf/installs/golang/1.21.3/go/bin/go"
+    },
+    "projectManager.git.baseFolders": [
+        "$home/code"
+    ],
+    "projectManager.sortList": "Recent",
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.startupPrompt": "never",
     // "terminal.external.linuxExec": "kitty",
     // "terminal.explorerKind": "both",
     // "terminal.sourceControlRepositoriesKind": "both",
     "security.workspace.trust.untrustedFiles": "newWindow",
-    "security.workspace.trust.startupPrompt": "never",
-    "security.workspace.trust.enabled": false,
-    "window.titleBarStyle": "custom",
+    "sortJSON.orderOverride": [
+        "name",
+        "version",
+        "main",
+        "module",
+        "types",
+        "typings",
+        "files",
+        "publishConfig",
+        "repository",
+        "scripts",
+        "prefix",
+        "description",
+        "body"
+    ],
+    "sortJSON.orderUnderride": [
+        "resolutions",
+        "dependencies",
+        "devDependencies",
+        "peerDependencies",
+        "cSpell.userWords"
+    ],
+    "vim.foldfix": true,
+    "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.textColor": "white",
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "leader",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                ":w!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "q"
+            ],
+            "commands": [
+                ":q!"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "x"
+            ],
+            "commands": [
+                ":x!"
+            ]
+        },
+        {
+            "after": [
+                "g",
+                "g",
+                "V",
+                "G"
+            ],
+            "before": [
+                "<c-a>"
+            ]
+        },
+        {
+            "after": [
+                "g",
+                "g",
+                "V",
+                "G"
+            ],
+            "before": [
+                "<c-a>"
+            ]
+        },
+        {
+            "after": [
+                "g",
+                "g",
+                "V",
+                "G"
+            ],
+            "before": [
+                "<c-a>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
+        },
+        {
+            "before": [
+                "[",
+                "d"
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "after": [
+                "^"
+            ],
+            "before": [
+                "H"
+            ]
+        },
+        {
+            "after": [
+                "$"
+            ],
+            "before": [
+                "L"
+            ]
+        },
+        {
+            "before": [
+                "<c-w>",
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        }
+    ],
+    "vim.useSystemClipboard": true,
     "window.dialogStyle": "custom",
+    "window.menuBarVisibility": "toggle",
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Decay",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "readme",
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "window.zoomLevel": -1
 }

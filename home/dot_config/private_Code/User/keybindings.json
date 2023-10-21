@@ -1,0 +1,54 @@
+[
+    {
+        "command": "projectManager.listGitProjects#sideBarGit",
+        "key": "ctrl+shift+o"
+    },
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+e"
+    },
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+e"
+    },
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+e"
+    },
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+e"
+    },
+    {
+        "command": "renameFile",
+        "key": "r",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "filesExplorer.copy",
+        "key": "c",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "filesExplorer.paste",
+        "key": "p",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "key": "ctrl+n",
+        "when": "editorFocus"
+    },
+    {
+        "command": "-workbench.action.files.save",
+        "key": "ctrl+s"
+    },
+    {
+        "command": "saveAll",
+        "key": "ctrl+s"
+    },
+    {
+        "command": "workbench.action.toggleZenMode",
+        "key": "ctrl+shift+z"
+    }
+]
