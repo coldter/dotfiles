@@ -6,13 +6,14 @@
         "editor.suggest.insertMode": "replace"
     },
     "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.fontSize": 18
     },
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorSurroundingLines": 5,
     "editor.fontFamily": "'JetBrainsMono Nerd Font Mono','FiraCode Nerd Font Mono','Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 17,
+    "editor.fontSize": 17.5,
     "editor.fontWeight": "300",
     "editor.inlineSuggest.enabled": true,
     "editor.lineNumbers": "relative",
@@ -39,16 +40,18 @@
         "**/dist": true,
         "**/node_modules": true
     },
+    "git.openRepositoryInParentFolders": "never",
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "markdown": false,
         "plaintext": false,
         "scminput": false
     },
-    "glassit.alpha": 220,
     "go.alternateTools": {
         "go": "/home/cooldeep/.asdf/installs/golang/1.21.3/go/bin/go"
     },
+    "go.toolsManagement.autoUpdate": true,
+    "markdown.preview.fontSize": 16,
     "projectManager.git.baseFolders": [
         "$home/code"
     ],
@@ -213,23 +216,77 @@
         },
         {
             "before": [
-                "<c-w>",
+                "<c-p>"
             ],
             "commands": [
-                "workbench.action.closeActiveEditor"
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<c-f>"
+            ],
+            "command": [
+                "editor.action.findReferences"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f"
+            ],
+            "command": [
+                "editor.action.findReferences"
+            ]
+        },
+        {
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ],
+            "before": [
+                "d"
+            ]
+        },
+        {
+            "after": [
+                "\"",
+                "_",
+                "D"
+            ],
+            "before": [
+                "D"
             ]
         }
     ],
     "vim.useSystemClipboard": true,
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ],
+            "before": [
+                "d"
+            ]
+        }
+    ],
     "window.dialogStyle": "custom",
     "window.menuBarVisibility": "toggle",
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Decay",
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "fluent-icons",
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "readme",
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
-    "window.zoomLevel": -1
+    "cSpell.userWords": [
+        "basicly"
+    ],
+    "breadcrumbs.enabled": true,
+    "git.autofetch": true
 }

@@ -10,6 +10,7 @@ alias tree='tree -a -I ".svn|.git|.hg|.idea"'
 alias tree2='tree -L 2'
 alias tree3='tree -L 3'
 alias k9='kill -9'
+alias hx='helix'
 
 # editor
 alias c='code'
@@ -42,3 +43,6 @@ alias scst='systemctl start'
 alias scsp='systemctl stop'
 alias scdr='systemctl daemon-reload'
 alias jctl='sudo journalctl -b -n 200 -f'
+
+# docker
+alias k='kubectl'

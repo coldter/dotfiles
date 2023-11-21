@@ -15,6 +15,7 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
+XDG_CONFIG_HOME=$HOME/config
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -36,6 +37,20 @@ fi
 # Source ~/.aliases, if it exists
 if [ -f ~/.aliases ]; then
     . ~/.aliases
+fi
+
+if [ -d /usr/share/fzf ]; then
+    . /usr/share/fzf/completion.bash
+    . /usr/share/fzf/key-bindings.bash
+fi
+
+if [ -f "$HOME/.asdf/asdf.sh" ]; then
+    . "$HOME/.asdf/asdf.sh"
+    . "$HOME/.asdf/completions/asdf.bash"
+fi
+
+if [ -x "$(command -v direnv)" ]; then
+    eval "$(direnv hook bash)"
 fi
 
 PS1='[\u@\h \W]\$ '

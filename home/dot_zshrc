@@ -1,11 +1,5 @@
 ZSH=/usr/share/oh-my-zsh/
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="powerlevel10k"
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+XDG_CONFIG_HOME=$HOME/config
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
@@ -78,13 +72,39 @@ alias pc='sudo pacman -Sc'                   # remove unused cache
 alias po='pacman -Qtdq | sudo pacman -Rns -' # remove unused packages, also try > pacman -Qqd | pacman -Rsu --print -
 alias vc='code'                              # gui code editor
 
+if [ -f "$HOME/.asdf/asdf.sh" ]; then
+    . "$HOME/.asdf/asdf.sh"
+    # append completions to fpath
+    fpath=(${ASDF_DIR}/completions $fpath)
+    # initialise completions with ZSH's compinit
+    autoload -Uz compinit && compinit
+
+    # golang
+    if [ -d "$HOME/.asdf/plugins/golang" ]; then
+        . ~/.asdf/plugins/golang/set-env.zsh
+
+        PATH="$HOME/go/bin:$PATH"
+    fi
+fi
+
 if [ -d ~/.zsh_completion ]; then
     for file in ~/.zsh_completion/*; do
-        . $file
+        source $file
     done
 fi
+
+if [ -d /usr/share/fzf ]; then
+    . /usr/share/fzf/completion.zsh
+    . /usr/share/fzf/key-bindings.zsh
+fi
+
+if [ -x "$(command -v direnv)" ]; then
+    eval "$(direnv hook zsh)"
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+eval "$(starship init zsh)"
 
 #Display Pokemon
 pokemon-colorscripts --no-title -r 1,3,6
