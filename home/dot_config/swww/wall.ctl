@@ -1,4 +1,4 @@
-1|Catppuccin-Mocha|~/.config/swww/Catppuccin-Mocha/cat_anime-girl.png
+1|Catppuccin-Mocha|~/.config/swww/Catppuccin-Mocha/ghibli-japanese-walled-garden.png
 0|Catppuccin-Latte|~/.config/swww/Catppuccin-Latte/jormungandr.jpg
 0|Decay-Green|~/.config/swww/Decay-Green/moments_before_desk.png
 0|Rose-Pine|~/.config/swww/Rose-Pine/mountain_dragon_pink.jpg
