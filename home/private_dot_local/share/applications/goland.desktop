@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GoLand
+Icon=~/.local/share/applications/GoLand-2023.2.4/bin/goland.png
+Exec=sh -c ~/.local/share/applications/GoLand-2023.2.4/bin/goland.sh
+Categories=Tool;
+Type=Application
+Encoding=UTF-8
