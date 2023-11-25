@@ -3,3 +3,4 @@ test.sh
 *.log
 TokyoNight-SE.tar.bz2
 .vscode/
+temp.diff.patch

@@ -1,2 +1,5 @@
 .config/tmux/plugins/
 .config/tmux/plugins/**
+.config/chezmoi/**
+.config/chezmoi/
+/home/cooldeep/.config/chezmoi/chezmoistate.boltdb
