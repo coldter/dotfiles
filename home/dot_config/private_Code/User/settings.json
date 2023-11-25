@@ -1,4 +1,7 @@
 {
+    "[go]": {
+        "editor.defaultFormatter": "golang.go-nightly"
+    },
     "[jsonc]": {
         "editor.quickSuggestions": {
             "strings": true
@@ -48,9 +51,11 @@
         "plaintext": false,
         "scminput": false
     },
+    "gitlens.telemetry.enabled": false,
     "go.alternateTools": {
-        "go": "/home/cooldeep/.asdf/installs/golang/1.21.3/go/bin/go"
+        "go": "/home/cooldeep/.asdf/installs/golang/1.21.4/go/bin/go"
     },
+    "go.goroot": "/home/cooldeep/.asdf/installs/golang/1.21.4/go/",
     "go.toolsManagement.autoUpdate": true,
     "markdown.preview.fontSize": 16,
     "projectManager.git.baseFolders": [
@@ -86,6 +91,7 @@
         "peerDependencies",
         "cSpell.userWords"
     ],
+    "telemetry.telemetryLevel": "off",
     "vim.foldfix": true,
     "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
     "vim.highlightedyank.enable": true,
